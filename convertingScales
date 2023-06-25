@@ -9,7 +9,11 @@ const celsius = kelvin - 273;
 // vai converter o valor de celsius para fahrenheit com uma equação constante, mas a variável fahrenheit precisa ser modificável
 let fahrenheit = celsius * (9/5) + 32;
 
+let newtonScale = celsius * (33/100);
+
 // Por sempre se tratar de um valor que vem com vírgula ou ponto utilizamos o .floor
 fahrenheit = Math.floor(fahrenheit);
+newtonScale = Math.floor(newtonScale);
 
 console.log(`The temperture is ${fahrenheit} degrees Fahrenheit`);
+console.log(`The temperature is ${newtonScale} degrees in Newton Scale`);
